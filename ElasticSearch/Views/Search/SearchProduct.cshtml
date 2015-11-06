@@ -1,0 +1,18 @@
+﻿@model ElasticSearch.DomainModel.Product
+
+@{
+    ViewBag.Title = "View";
+}
+
+@using (Html.BeginForm("SearchProduct", "Search", FormMethod.Get))
+{
+    <div class="form-horizontal">
+        <p>
+            Search Term: @Html.TextBox("Id") <br />
+            <input type="submit" value="Search" />
+        </p>
+    </div>
+}
+
+<h2>@Model.Name</h2>
+<h2>@Model.ProductID</h2>

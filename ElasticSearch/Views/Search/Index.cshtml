@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "View";
+}
+
+@using (Html.BeginForm("SearchProduct", "Search", FormMethod.Get))
+{
+    <div class="form-horizontal">
+        <p>Search Term: @Html.TextBox("Id") <br />
+        <input type="submit" value="Search" /></p>
+    </div>
+}
